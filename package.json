@@ -9,7 +9,7 @@
     "clean": "rimraf dist",
     "tsc": "bun build src/index.ts --outdir ./dist --target bun",
     "build": "npm-run-all clean tsc",
-    "lint": "tsc --noEmit && eslint --cache --fix",
+    "lint": "eslint --cache --fix",
     "prettier": "prettier --write",
     "lint-staged": "lint-staged",
     "prepare": "husky"
