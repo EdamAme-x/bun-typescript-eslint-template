@@ -1,13 +1,13 @@
 {
-  "name": "nodejs-typescript-eslint-template",
+  "name": "bun-typescript-eslint-template",
   "version": "1.0.0",
-  "description": "Robust TypeScript Template with eslint for Node.js",
-  "main": "dist/index.js",
+  "description": "Robust TypeScript Template with eslint for Bun",
   "type": "module",
   "scripts": {
-    "start": "node --import tsx/esm src/index.ts",
+    "start": "bun run src/index.ts",
+    "dev": "bun run --watch src/index.ts",
     "clean": "rimraf dist",
-    "tsc": "tsc",
+    "tsc": "bun build src/index.ts --outdir ./dist --target bun",
     "build": "npm-run-all clean tsc",
     "lint": "tsc --noEmit && eslint --cache --fix",
     "prettier": "prettier --write",

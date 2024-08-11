@@ -1,4 +1,4 @@
-import { join } from 'path';
+import { join } from 'node:path';
 
 /** Path to the working directory */
 export const workdir = process.env.APP_BASEDIR ?? 'run';

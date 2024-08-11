@@ -5,7 +5,7 @@
     /* Specify what module code is generated. */
     "module": "es2022",
     /* Specify what module resolution strategy the compiler should use. */
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     /* Create source map files for emitted JavaScript files. */
     "sourceMap": true,
     /* Specify an output folder for all emitted files. */
@@ -21,7 +21,10 @@
     /* Require override modifiers on all overridable methods. */
     "noImplicitOverride": true,
     /* Require explicit return types on functions and class methods. */
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    /* No build */
+    "noEmit": true,
+    "allowImportingTsExtensions": true
   },
   /* ts-node */
   "ts-node": {
